@@ -50,7 +50,7 @@ body {
 }
 
 .inner {
-  padding: 30px;
+  padding: 20px;
 }
 
 header {
@@ -88,7 +88,7 @@ header {
 /* Lines  */
 .border-line {
   border-top: 2px solid #976cbc;
-  margin: 15px auto;
+  margin: 10px auto;
   max-width: 350px;
 }
 
@@ -127,7 +127,7 @@ header {
 .bar2{
   border-top: 5px solid #509eed;
   margin-top: 0px;
-  position: relative;
+  position: fixed;
 }
 
 
