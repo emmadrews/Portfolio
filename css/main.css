@@ -127,7 +127,7 @@ header {
 .bar2{
   border-top: 5px solid #509eed;
   margin-top: 0px;
-  position: relative;
+  position: fixed;
 }
 
 
