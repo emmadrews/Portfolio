@@ -110,4 +110,17 @@ p{
 .headshot {
   float: right;
   width: 250px;
+  padding: 20px;
+}
+
+ul.sidebar li #work:hover{
+  color: #976cbc;
+}
+
+ul.sidebar li #about:hover{
+  color: #509eed;
+}
+
+ul.sidebar li #contact:hover{
+  color: #ff4b75;
 }
