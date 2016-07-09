@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="no"?>
+<gallery title="" frameColor="0xFFFFFF" frameWidth="0" imagePadding="20" displayTime="3.00">
+    <image>
+        <filename>images/1-2.jpg</filename>
+        <caption></caption>
+        <width>561</width>
+        <height>750</height>
+    </image>
+    <image>
+        <filename>images/3-4.jpg</filename>
+        <caption></caption>
+        <width>561</width>
+        <height>750</height>
+    </image>
+    <image>
+        <filename>images/5-6.jpg</filename>
+        <caption></caption>
+        <width>561</width>
+        <height>750</height>
+    </image>
+    <image>
+        <filename>images/7-8.jpg</filename>
+        <caption></caption>
+        <width>561</width>
+        <height>750</height>
+    </image>
+    <image>
+        <filename>images/9-10.jpg</filename>
+        <caption></caption>
+        <width>561</width>
+        <height>750</height>
+    </image>
+</gallery>
