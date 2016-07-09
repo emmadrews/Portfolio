@@ -1,6 +1,5 @@
 body {
   background: #eee;
-  cursor:crosshair;
 }
 
 .logo {
@@ -36,7 +35,7 @@ p {
   text-align-last: center;
 }
 a:hover {
-  cursor:cell;
+  cursor:crosshair;
 }
 .main{
   float: left;
