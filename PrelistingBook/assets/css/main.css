@@ -219,9 +219,6 @@ header ul.gallery-meta li {
 }
 
 #thumbnailContainer {
-    position: relative;
-    padding: 78px 54px;
-    width: 100%;
    -moz-box-sizing: border-box;
     box-sizing: border-box;
     overflow: hidden;
