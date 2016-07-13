@@ -304,3 +304,46 @@ p {
   text-align-last: center;
 }
 
+.socials {
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+
+.socials li {
+  display: inline-block;
+}
+
+.socials-item {
+  display: inline-block;
+  background: #000000;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 20px;
+}
+
+.socials a {
+  color: white;
+  font-size: 17px;
+}
+
+.socials i {
+ padding-top: 9px;
+}
+
+ul.socials li #link:hover {
+  background: #42e2b6;
+  color: black;
+}
+
+ul.socials li #be:hover {
+  background: #ff4b75;
+  color: black;
+}
+
+ul.socials li #fb:hover {
+  background: #509eed;
+  color: black;
+}
