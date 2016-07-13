@@ -525,7 +525,6 @@ function init(){
         _$buttonClose.fadeIn(350);
         _isOpen = true;
         showLoupeViewForThumbnail(_$targetThumb);
-        window.location.hash = ''
     }
 
     function showLoupeViewForThumbnail($thumbnail, snap) {
@@ -614,7 +613,7 @@ function init(){
     }
 
     function setLoupeHashForID(id) {
-        window.location.hash = "#/view/" + id;
+        window.location.hash = "" + id;
     }
 
     function hideCurrentImage() {
