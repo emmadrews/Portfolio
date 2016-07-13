@@ -300,8 +300,7 @@ left: 200px;
 p {
   font-family: 'work sans', sans-serif;
   font-weight: 300;
-  text-align: justify;
-  text-align-last: center;
+  text-align: left;
 }
 
 .socials {
