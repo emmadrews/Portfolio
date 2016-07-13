@@ -7,13 +7,13 @@ body {
   padding:20px 20px 0px 20px;
 }
 h1{
-  font-family:'Work Sans', sans-serif;
-  text-transform: Uppercase;
-  text-decoration: none;
+  text-decoration:none;
+  color:black;
+  transition:1s ease;
+  font-family: 'work sans', sans-serif;
+  text-transform: uppercase;
   font-weight: 100;
-  color: black;
-  background-color: white;
-  font-size: 14px;
+  font-size: 2em;
 }
 h1 a{
   font-family:'Work Sans', sans-serif;
