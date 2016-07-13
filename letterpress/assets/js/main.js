@@ -525,6 +525,7 @@ function init(){
         _$buttonClose.fadeIn(350);
         _isOpen = true;
         showLoupeViewForThumbnail(_$targetThumb);
+        window.location.hash = ''
     }
 
     function showLoupeViewForThumbnail($thumbnail, snap) {
@@ -693,6 +694,7 @@ function init(){
     }
 
     function closeLoupeView(e) {
+        e.preventDefault();
         e.stopPropagation();
         $(window).off(
             "resize",
