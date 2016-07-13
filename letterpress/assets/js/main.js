@@ -612,10 +612,6 @@ function init(){
         _$countCurrent.html(_$targetThumb.data("index") + 1);
     }
 
-    function setLoupeHashForID(id) {
-        window.location.hash = "";
-    }
-
     function hideCurrentImage() {
         _loupeIsTransitioning = true;
         _$loupeImageContainer.fadeOut(100, onCurrentImageHidden);
@@ -710,12 +706,6 @@ function init(){
         );
         unlockBody();
         var currentScrollTop = _$w.scrollTop();
-        if(_currentPageIndex > 0){
-            setPageHashForPageNumber(_currentPageIndex+1);
-        }
-        else{
-            window.location.hash = "";
-        }
         _$w.scrollTop(currentScrollTop);
         _isOpen = false;
     }
