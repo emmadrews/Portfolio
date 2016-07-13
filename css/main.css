@@ -347,3 +347,7 @@ ul.socials li #fb:hover {
   background: #509eed;
   color: black;
 }
+
+p.bio {
+ text-transform:uppercase; 
+}
