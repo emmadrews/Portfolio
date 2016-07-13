@@ -108,33 +108,6 @@ function init(){
         _$thumbnails.push(LR.images[i].$thumbnail);
     }
 
-    // Check for an existing hash
-    if(window.location.hash != ""){
-        var _parts = window.location.hash.split("/");
-        switch(_parts[1]){
-            case "view" :
-                for(var i = 0; i < LR.images.length; i++){
-                    if(LR.images[i].$thumbnailImg.attr("data-id") == _parts[2]){
-                        _autoViewThumb = LR.images[i].$thumbnailImg;
-                        break;
-                    }
-                }
-                break;
-            case "page" :
-                if(_parts[2]){
-                    _currentPageIndex = parseInt(_parts[2]) - 1;
-                }
-                if(_parts[3] && _parts[3] == "view" && _parts[4]){
-                    for(var i = 0; i < LR.images.length; i++){
-                        if(LR.images[i].$thumbnailImg.attr("data-id") == _parts[4]){
-                            _autoViewThumb = LR.images[i].$thumbnailImg;
-                            break;
-                        }
-                    }
-                }
-                break; 
-        }
-    }
 
     // Render the page based on the user-selected pagination style
     switch(_paginationStyle){
@@ -213,8 +186,6 @@ function init(){
         }
         _currentPageIndex = index;
         setPageNav();
-        if(_currentPageIndex > 0){
-            setPageHashForPageNumber(_currentPageIndex + 1);
         }
     }
 
@@ -235,9 +206,6 @@ function init(){
         _$pageCountTotal.html(_totalPages);
     }
 
-    function setPageHashForPageNumber(num) {
-        window.location.hash = "#/page/" + num;
-    }
 
 
     // Pagination Style: "scroll"
@@ -612,9 +580,7 @@ function init(){
         _$countCurrent.html(_$targetThumb.data("index") + 1);
     }
 
-    function setLoupeHashForID(id) {
-        window.location.hash = "#/view/" + id;
-    }
+
 
     function hideCurrentImage() {
         _loupeIsTransitioning = true;
