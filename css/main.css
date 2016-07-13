@@ -347,4 +347,11 @@ ul.socials li #fb:hover {
   color: black;
 }
 
+.bar {
+  border-top: solid 8px #976cbc;
+  margin-top: -10px;
+  width: 100px;
+  margin-left: 35px;
+}
+
 
