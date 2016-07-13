@@ -236,7 +236,7 @@ function init(){
     }
 
     function setPageHashForPageNumber(num) {
-        window.location.hash = "#/page/" + num;
+        window.location.hash = "";
     }
 
 
@@ -613,7 +613,7 @@ function init(){
     }
 
     function setLoupeHashForID(id) {
-        window.location.hash = "" + id;
+        window.location.hash = "";
     }
 
     function hideCurrentImage() {
