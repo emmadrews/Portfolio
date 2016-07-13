@@ -108,7 +108,6 @@ function init(){
         _$thumbnails.push(LR.images[i].$thumbnail);
     }
 
-
     // Render the page based on the user-selected pagination style
     switch(_paginationStyle){
         
@@ -186,7 +185,6 @@ function init(){
         }
         _currentPageIndex = index;
         setPageNav();
-        }
     }
 
     function showNextPage() {
@@ -205,7 +203,6 @@ function init(){
         _$pageCountCurrent.html(_currentPageIndex + 1);
         _$pageCountTotal.html(_totalPages);
     }
-
 
 
     // Pagination Style: "scroll"
@@ -561,8 +558,6 @@ function init(){
         _$loupeImageContainer.append(_$loupeImage);
         _$loupeImageContainer.fadeIn(350, onSetImageFadeInComplete);
 
-        setLoupeHashForID(_$targetThumb.attr("data-id"));
-
         _$loupeImg.css("max-height", _$loupeContainer.height() + "px");
 
         $(window).on(
@@ -579,8 +574,6 @@ function init(){
         _$countTotal.html(_$thumbnails.length);
         _$countCurrent.html(_$targetThumb.data("index") + 1);
     }
-
-
 
     function hideCurrentImage() {
         _loupeIsTransitioning = true;
@@ -659,7 +652,6 @@ function init(){
     }
 
     function closeLoupeView(e) {
-        e.preventDefault();
         e.stopPropagation();
         $(window).off(
             "resize",
@@ -676,12 +668,6 @@ function init(){
         );
         unlockBody();
         var currentScrollTop = _$w.scrollTop();
-        if(_currentPageIndex > 0){
-            setPageHashForPageNumber(_currentPageIndex+1);
-        }
-        else{
-            window.location.hash = "";
-        }
         _$w.scrollTop(currentScrollTop);
         _isOpen = false;
     }
