@@ -680,7 +680,6 @@ function init(){
     }
 
     function closeLoupeView(e) {
-        e.preventDefault();
         e.stopPropagation();
         $(window).off(
             "resize",
