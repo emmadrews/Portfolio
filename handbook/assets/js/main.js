@@ -213,9 +213,6 @@ function init(){
         }
         _currentPageIndex = index;
         setPageNav();
-        if(_currentPageIndex > 0){
-            setPageHashForPageNumber(_currentPageIndex + 1);
-        }
     }
 
     function showNextPage() {
@@ -233,10 +230,6 @@ function init(){
     function setPageNav() {
         _$pageCountCurrent.html(_currentPageIndex + 1);
         _$pageCountTotal.html(_totalPages);
-    }
-
-    function setPageHashForPageNumber(num) {
-        window.location.hash = "";
     }
 
 
@@ -592,8 +585,6 @@ function init(){
 
         _$loupeImageContainer.append(_$loupeImage);
         _$loupeImageContainer.fadeIn(350, onSetImageFadeInComplete);
-
-        setLoupeHashForID(_$targetThumb.attr("data-id"));
 
         _$loupeImg.css("max-height", _$loupeContainer.height() + "px");
 
